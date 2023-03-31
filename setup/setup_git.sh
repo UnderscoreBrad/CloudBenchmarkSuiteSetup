@@ -10,8 +10,10 @@ declare -a repoNames=(
 "IntegrationMultiThreadTester"
 )
 
-cd ..
-cd ..
+cd ~/CloudBenchmarkSuiteSetup
+mkdir repos
+chmod 777 repos
+cd repos
 
 echo "== == DOWNLOADING REPOS FROM GITHUB == =="
 for x in ${repoLinks[@]}; do
@@ -25,5 +27,5 @@ for x in ${repoNames[@]}; do
 	chmod 777 -R ${x}
 done
 
-cd "CloudBenchmarkSuiteSetup/setup"
-ls
+cd ..
+cd "setup"

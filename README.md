@@ -1,6 +1,9 @@
 # Cloud Benchmark Suite Setup
 A set of scripts to install a cloud benchmark suite and all its dependencies, streamlining environment setup. Designed for Linux systems.
 
+## SETUP USAGE: sudo ./setup
+
+This will download repositories and required benchmarks, download prerequisites, and configure a database for PGBench.
 
 ## Included Benchmarks:
 

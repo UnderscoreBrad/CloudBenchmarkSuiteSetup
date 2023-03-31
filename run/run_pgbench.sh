@@ -13,5 +13,3 @@ mkdir pgbench
 chmod 777 pgbench
 sudo -u postgres pgbench -i -s 200 example
 sudo -u postgres pgbench -c 10 -s 200 --jobs=${cores} --transactions=${transactions} example
-sudo -u postgres pgbench -c 10 -s 200 --jobs=${cores} --transactions=${transactions} example
-sudo -u postgres pgbench -c 10 -s 200 --jobs=${cores} --transactions=${transactions} example

@@ -2,7 +2,7 @@
 
 # Download & Install all packages available with apt
 declare -a apt=(
-"openjdk-19-jre-headless" 
+"openjdk-17-jdk-headless" 
 "python3" 
 "python3-pip" 
 "nodejs"

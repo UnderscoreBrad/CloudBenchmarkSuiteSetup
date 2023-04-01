@@ -2,3 +2,5 @@
 package-lock.json
 .git
 repos/
+pgbench/
+run/pgbench/

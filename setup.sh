@@ -11,15 +11,8 @@ read ans
 
 startDir=$PWD
 
-chmod a+x setup/setup_apt.sh
-chmod a+x setup/setup_docker.sh
-chmod a+x setup/setup_git.sh
-chmod a+x setup/setup_go.sh
-chmod a+x setup/setup_postgres.sh
-chmod a+x setup/setup_webserv.sh 
-
-# webserver is not run until needed
-
+chmod -R a+x setup/
+chmod -R a+x run/
 setup/./setup_apt.sh
 setup/./setup_docker.sh
 setup/./setup_git.sh

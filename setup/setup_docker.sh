@@ -15,3 +15,4 @@ echo \
 apt-get update
 apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 docker run hello-world || "install failed: Docker Engine!\n Press Enter to Continue." read ans
+sudo chmod 666 /var/run/docker.sock

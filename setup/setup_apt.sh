@@ -17,3 +17,6 @@ for x in ${apt[@]}; do
 	echo "== == INSTALL REQUIREMENT: ${x} == =="
 	apt install -y ${x} || echo "install failed: ${x}!\n Press Enter to Continue." read ans
 done
+
+npm install n -g
+n stable

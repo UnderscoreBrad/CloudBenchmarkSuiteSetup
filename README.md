@@ -7,38 +7,9 @@ Recommended environment: Ubuntu 20.04 LTS w/ 30GB+ of disk space
 
 This will download repositories and required benchmarks, download prerequisites, and configure a database for PGBench.
 
-## BENCHMARK RUN USAGE: sudo ./run.sh
+## RUNNING BENCHMARKS
 
-This will run the benchmark suite, saving results to corresponding files.
+In one terminal window, run: setup/./setup_webserv.sh
+In a second terminal window, run: sudo ./run.sh
 
-## Included Benchmarks:
-
-Yahoo Cloud Serving Benchmark
-
-PGBench
-
-HammerDB
-
-Autocannon
-
-Bombardier
-
-Cassowary
-
-Nginx wrk requests (custom)
-
-FIO
-
-Perf3
-
-Geekbench
-
-Machine Learning Performance Analysis (custom)
-
-Prime Number Generation Tester (custom)
-
-Single-Function Monte Carlo Integration Tester (custom)
-
-Multi-Threaded Monte Carlo Integration Tester (custom)
-
-HTTP Ping A-Giant-List-of-Places (custom)
+This will run the benchmark suite, with results sequential in the terminal.

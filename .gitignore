@@ -7,4 +7,5 @@ integration/
 webservers/
 run/pgbench/
 run/integration/
-run/webservers
+run/webservers/
+webserver.log

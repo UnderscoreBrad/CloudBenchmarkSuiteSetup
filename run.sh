@@ -2,11 +2,10 @@
 
 # Run comprehensive benchmarks first
 echo "begin running benchmarks. this will take a while."
-cd run && curl -sL yabs.sh | bash
-
-./run_integration.sh
-./run_databases.sh && cd ..
-setup/./setup_webserv.sh > /dev/null 2>&1 &
-cd run && ./run_webserv.sh && cd ..
-
-echo "benchmarks completed. results can be found in the corresponding directories."
+ curl -sL yabs.sh | bash
+run/./run_integration.sh
+run/./run_databases.sh
+#setup/./setup_webserv.sh > webserv_log.txt 2>&1 &
+run/./run_webserv.sh
+trap "exit" INT TERM
+trap "kill 0" EXIT

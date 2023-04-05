@@ -9,7 +9,6 @@ This will download repositories and required benchmarks, download prerequisites,
 
 ## RUNNING BENCHMARKS
 
-In one terminal window, run: setup/./setup_webserv.sh
-In a second terminal window, run: sudo ./run.sh
+Run: sudo ./run.sh
 
 This will run the benchmark suite, with results sequential in the terminal.

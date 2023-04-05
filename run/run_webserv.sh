@@ -10,4 +10,4 @@ autocannon localhost:80
 autocannon localhost:3000
 echo "== == RUN CASSOWARY BENCHMARKS == =="
 docker run rogerw/cassowary:v0.14.1 -u ${url}:80 -c 10 -n 1000
-docker run rogerw/cassowary:v0.14.1 -u ${url}:3000 -c 10 -n 1000
+#docker run rogerw/cassowary:v0.14.1 -u ${url}:3000 -c 10 -n 1000

@@ -17,7 +17,7 @@ time sudo -u postgres pgbench -c 10 -j 2 -t 10000 example
 
 echo "test type: PGBench - medium (scale 200, max threads, 100000 transactions total)"
 time sudo -u postgres pgbench -i -s 200 example
-time sudo -u postgres pgbench -c 10 --jobs=${cores} --transactions=${transactionsA} example
+time sudo -u postgres pgbench -c 10 --jobs=$(getconf _NPROCESSORS_ONLN) --transactions=100000 example
 
 # echo "test type: PGBench - LARGE (scale 200, max threads, 1000000 transactions total)"
 # sudo -u postgres pgbench -i -s 200 example

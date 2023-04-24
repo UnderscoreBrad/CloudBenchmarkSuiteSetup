@@ -23,3 +23,11 @@ export MAVEN_HOME=/opt/maven
 export PATH=${M2_HOME}/bin:${PATH}" >> /etc/profile.d/maven.sh
 chmod +x /etc/profile.d/maven.sh
 source /etc/profile.d/maven.sh
+
+apt install python3
+apt install python3-pip
+apt install python
+
+wget https://github.com/brianfrankcooper/YCSB/releases/download/0.15.0/ycsb-mongodb-binding-0.15.0.tar.gz
+tar xvf ycsb-mongodb-binding-0.15.0.tar.gz
+cd ycsb-mongodb-binding-0.15.0
